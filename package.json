@@ -5,17 +5,30 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "i18n": "yarn i18n:extract && yarn i18n:compile",
+    "i18n:extract": "lingui extract",
+    "i18n:compile": "lingui compile --typescript",
+    "postinstall": "yarn i18n"
   },
   "dependencies": {
+    "@lingui/react": "^3.13.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.8",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "@lingui/cli": "^3.13.2",
+    "@lingui/core": "^3.13.2",
+    "@lingui/macro": "^3.13.2",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
     "@vitejs/plugin-react": "^1.0.7",
+    "babel-plugin-macros": "^3.1.0",
     "typescript": "^4.5.4",
-    "vite": "^2.8.0"
+    "vite": "^2.8.0",
+    "vite-plugin-babel-macros": "^1.0.6"
   }
 }
