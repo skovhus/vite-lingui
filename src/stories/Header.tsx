@@ -1,4 +1,5 @@
 import React from 'react';
+import { Trans } from '@lingui/macro'
 
 import { Button } from './Button';
 import './header.css';
@@ -40,7 +41,7 @@ export const Header = ({ user, onLogin, onLogout, onCreateAccount }: HeaderProps
         {user ? (
           <>
             <span className="welcome">
-              Welcome, <b>{user.name}</b>!
+              <Trans>Welcome, <b>{user.name}</b>!</Trans>
             </span>
             <Button size="small" onClick={onLogout} label="Log out" />
           </>

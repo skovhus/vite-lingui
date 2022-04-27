@@ -28,3 +28,7 @@ msgstr "Tælleren er: {count}"
 #: src/App.tsx:58
 msgid "This is a translated message"
 msgstr "Den er oversat"
+
+#: src/stories/Header.tsx:44
+msgid "Welcome, <0>{0}</0>!"
+msgstr "Velkommen, <0>{0}</0>!"

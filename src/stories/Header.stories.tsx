@@ -2,6 +2,7 @@ import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { Header } from './Header';
+import { I18nProviderDecorator } from '../../.storybook/i18n-decorator';
 
 export default {
   title: 'Example/Header',
@@ -10,6 +11,7 @@ export default {
     // More on Story layout: https://storybook.js.org/docs/react/configure/story-layout
     layout: 'fullscreen',
   },
+  decorators: [I18nProviderDecorator]
 } as ComponentMeta<typeof Header>;
 
 const Template: ComponentStory<typeof Header> = (args) => <Header {...args} />;
