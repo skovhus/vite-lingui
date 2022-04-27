@@ -9,7 +9,9 @@
     "i18n": "yarn i18n:extract && yarn i18n:compile",
     "i18n:extract": "lingui extract",
     "i18n:compile": "lingui compile --typescript",
-    "postinstall": "yarn i18n"
+    "postinstall": "yarn i18n",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@lingui/react": "^3.13.2",
@@ -23,9 +25,17 @@
     "@lingui/cli": "^3.13.2",
     "@lingui/core": "^3.13.2",
     "@lingui/macro": "^3.13.2",
+    "@storybook/addon-actions": "^6.4.22",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-interactions": "^6.4.22",
+    "@storybook/addon-links": "^6.4.22",
+    "@storybook/builder-vite": "^0.1.23",
+    "@storybook/react": "^6.4.22",
+    "@storybook/testing-library": "^0.0.11",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
     "@vitejs/plugin-react": "^1.0.7",
+    "babel-loader": "^8.2.5",
     "babel-plugin-macros": "^3.1.0",
     "typescript": "^4.5.4",
     "vite": "^2.8.0",
